@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script>
+function login(){
+	var uname=document.getElementById('username').value;
+	var pass=document.getElementById('password').value;
+	if(uname=="world" && pass=="123")
+	{
+		location.assign("http://localhost:8080/ProBlog101/myblog.html");
+	
+	}
+	else{
+		window.alert("login failed");
+	}
+}
+
+</script>
+<title>Insert title here</title>
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<style type="text/css">
+ 
+ .b{
+ background-color: coral;
+ width:500px;
+ height:500px;
+ border:1px solid blue;
+ margin: 0 auto;
+ padding: 120px;
+ box-sizing: border-box;
+ 
+ 
+ }
+  
+ 
+ </style>
+<body>
+<h1><span>Welcome To Our CodeBlog</span> </h1>
+<header>
+<section>
+<div id="logo">CODEPLUS</div>
+<input type="checkbox" id="toggle">
+<label for="toggle" class="hamburger-icon"><div></div><div></div><div></div></label>
+
+
+<nav>
+<a href="index.html">Home</a>
+<a href="reg.html">Register Here</a>
+<a href="login.html">Log In</a>
+<a href="about.html">About</a>
+<a href="contt.html">Contact Us</a>
+
+</nav>
+
+</section>
+</header>
+<center><h1>Welcome To Login Page</h1></center>
+<hr>
+<div class="b">
+
+username:<br>
+
+<input type="text" name="text" id="username">
+<br><br>
+
+password:<br>
+
+<input type="password" name="text" id="password">
+<br><br>
+
+<button onclick="login()">Submit</button>
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script>
+function login(){
+	if (document.getElementById("message").value == ""){
+        alert("Write Comment");
+        document.getElementById("message").focus();
+    }
+    else {
+    	location.assign("http://localhost:8080/ProBlog101/index.html");
+    }
+		}
+
+</script>
+<title>Insert title here</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1><span>Welcome To Our CodeBlog</span> </h1>
+<header>
+<section>
+<div id="logo">CODEPLUS</div>
+<input type="checkbox" id="toggle">
+<label for="toggle" class="hamburger-icon"><div></div><div></div><div></div></label>
+
+
+<nav>
+<a href="index.html">Home</a>
+<a href="reg.html">Register Here</a>
+<a href="login.html">Log In</a>
+<a href="about.html">About</a>
+<a href="contt.html">Contact Us</a>
+
+
+</nav>
+
+</section>
+</header>
+<div class="b">
+
+<br>
+
+<center><textarea placeholder="Write Here" id="message"  rows="10" cols="60"></textarea></center>
+<br><br>
+
+
+
+<center><button onclick="login()">Submit</button></center>
+
+
+
+</div>
+ 
+</body>
+</html> 
